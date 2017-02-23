@@ -13,10 +13,13 @@
 \alias{read_POF}
 \alias{read_RAIS}
 \alias{read_dataset}
+\alias{read_macica}
 \title{Functions to read most common Brazillian dataset}
 \usage{
 read_CensoEscolar(ft, i, harmonize_varnames = F, root_path = NULL,
   file = NULL, vars_subset = NULL)
+
+read_macica(ft, i, root_path = NULL, file = NULL, vars_subset = NULL)
 
 read_CensoEducacaoSuperior(ft, i, root_path = NULL, file = NULL,
   vars_subset = NULL)

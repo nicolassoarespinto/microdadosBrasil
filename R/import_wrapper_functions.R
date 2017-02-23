@@ -37,6 +37,18 @@ read_CensoEscolar <- function(ft,i,harmonize_varnames=F,root_path=NULL, file = N
 }
 
 
+#' @rdname read_dataset
+#' @export
+read_macica<- function(ft,i,root_path=NULL, file = NULL, vars_subset = NULL){
+  metadata <-  read_metadata('macica')
+
+
+
+
+  data<-read_data(dataset = "macica",ft, i,root_path =  root_path, file = file, vars_subset = vars_subset)
+
+  return(data)
+}
 
 
 
