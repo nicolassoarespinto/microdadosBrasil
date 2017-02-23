@@ -1,32 +1,115 @@
 int_pos;var_name;x;label;length;decimal_places;fin_pos;col_type;CHAR
-1;NUNB;NA;;10;0;10;c;TRUE
-11;VL_MR_ATU;NA;;14;0;24;c;TRUE
-25;CSESPECIE;NA;;2;0;26;c;TRUE
-27;NMRECEBEDOR;NA;;28;0;54;c;TRUE
-55;DNRECEBEDOR;NA;;8;0;62;c;TRUE
-63;NU_CPF_R;NA;;11;0;73;c;TRUE
-74;CSSEXOR;NA;;1;0;74;c;TRUE
-75;NM_TIT_BENEF_T;NA;;40;0;114;c;TRUE
-115;NM_MAE_T;NA;;32;0;146;c;TRUE
-147;NU_CPF_T;NA;;11;0;157;c;TRUE
-158;ID_NIT_T;NA;;11;0;168;c;TRUE
-169;DT_NASC_T;NA;;8;0;176;c;TRUE
-177;CTPS_T;NA;;7;0;183;c;TRUE
-184;CTPSSERIET;NA;;5;0;188;c;TRUE
-189;CTPSUFT;NA;;2;0;190;c;TRUE
-191;NU_IDENT_T;NA;;14;0;204;c;TRUE
-205;1DENTUFT;NA;;2;0;206;c;TRUE
-207;CS_EMISSOR_T;NA;;2;0;208;c;TRUE
-209;NUTITELEFrOR;NA;;13;0;221;c;TRUE
-222;CS_VAL_CNIS;NA;;2;0;223;c;TRUE
-224;CSSEXOT;NA;;1;0;224;c;TRUE
-225;TEENDERECOT;NA;;40;0;264;c;TRUE
-265;NMBAIRROT;NA;;17;0;281;c;TRUE
-282;NUCEPT;NA;;8;0;289;c;TRUE
-290;NUDDDT;NA;;4;0;293;c;TRUE
-294;NU_TEL_T;NA;;8;0;301;c;TRUE
-302;IDMUNSINPAST;NA;;5;0;306;c;TRUE
-307;IDMUNIBGET;NA;;6;0;312;c;TRUE
-313;NM_MUN_T;NA;;24;0;336;c;TRUE
-337;NM_UF_MUN_T;NA;;2;0;338;c;TRUE
-339;D20BIT0T;NA;;8;0;346;c;TRUE
+10;NB;NA;Número do Benefício;10;0;10;d;FALSE
+11;ID-OL-CONCESSAO;NA;Identificador do órgão concessor (11);8;0;18;d;FALSE
+19;ID-OL-MANUTENCAO;NA;Identificador do órgão mantenedor (11);8;0;26;d;FALSE
+27;ID-OL-MANUT-ANT;NA;Identificador órgão mantenedor anterior (11);8;0;34;d;FALSE
+35;CS-PA;NA;Classificador Pensão Alimentícia (14);1;0;35;d;FALSE
+36;VL-MR-ATU;NA;Valor da mensalidade reajustada atual (10);14;0;49;d;FALSE
+50;VL-RMI;NA;Valor da renda mensal inicial (10);14;0;63;d;FALSE
+64;CS-TRATAMENTO;NA;Tratamento do benefício (1);2;0;65;d;FALSE
+66;CS-ESPECIE;NA;Espécie do benefício (2);2;0;67;d;FALSE
+68;CS-RAMO-ATIVIDADE;NA;Ramo de atividade (3);1;0;68;d;FALSE
+69;CS-FORMA-FILIACAO;NA;Forma de filiação (4);1;0;69;d;FALSE
+70;CS-DOC-EMPREGADOR;NA;Tipo de documento do Empregador (15);1;0;70;d;FALSE
+71;NU-DOC-EMPREGADOR;NA;Número do documento do Empregador;14;0;84;d;FALSE
+85;NU-NB-ANT;NA;Número do benefício anterior;10;0;94;d;FALSE
+95;D2-DER;NA;Data de entrada do requerimento (5);8;0;102;d;FALSE
+103;D2-DIB;NA;Data de início do benefício (5);8;0;110;d;FALSE
+111;D2-DDB;NA;Data do despacho do benefício (5);8;0;118;d;FALSE
+119;D2-DCB;NA;Data de cessação do benefício (5);8;0;126;d;FALSE
+127;D2-DIP;NA;Data do início do pagamento (5);8;0;134;d;FALSE
+135;D2-INI-INCAPAC;NA;Data de início da incapacidade (5);8;0;142;d;FALSE
+143;D2-IN1CIO-DOENCA;NA;Data de início da doença (5);8;0;150;d;FALSE
+151;D2-DRD;NA;Data da regularização da documentação (5);8;0;158;d;FALSE
+159;D2-OBITO-RECLUSAO;NA;Data do óbito ou reclusão (5);8;0;166;d;FALSE
+167;CS-CLIENTELA;NA;Classificador de urbano e rural (20);1;0;167;c;TRUE
+168;NU-MATR-CONCESSOR;NA;Número de matrícula do concessor;8;0;175;d;FALSE
+176;NU-MATR-HABILITADOR;NA;Número de matrícula do habilitador;8;0;183;d;FALSE
+184;CS-SITUACAO-BENEF;NA;Classificador da situação do benefício (16);2;0;185;d;FALSE
+186;ID-BANCO;NA;Cbc do banco;3;0;188;d;FALSE
+189;ID-ORGAO-PAGADOR;NA;Sinônimo bancário (cod. agência Prev.);6;0;194;d;FALSE
+195;CS-MEIO-PAGTO;NA;Classificador do meio de pagamento (17);2;0;196;d;FALSE
+197;NU-AGENCIA-PAG;NA;Número da agência pagadora;6;0;202;d;FALSE
+203;NU-CONTA-CORRENTE;;Número da conta-corrente;10;;212;c;TRUE
+213;CS-DIAGNOSTICO-N;;Código da doença (18);6;;218;c;TRUE
+219;CS-DIAGNOSTICO-1;;Código da doença (18);6;;224;c;TRUE
+225;NU-MATR-MP1;;Número de matrícula do médico perito;7;;231;d;FALSE
+232;NU-MATR-MP2;;Número de matrícula do médico perito;7;;238;d;FALSE
+239;D2-FORMAT-CONC;;Data da formatação da concessão;8;;246;d;FALSE
+247;CS-DESPACHO;;Classificador do despacho (19);2;;248;d;FALSE
+249;DT-DIA-UTIL-PAGTO;;Dia útil da efetivação do pagamento;2;;250;d;FALSE
+251;NM-RECEBEDOR;;Nome do recebedor;28;;278;c;TRUE
+279;DN-RECEBEDOR;;Data de nascimento do recebedor (5);8;;286;d;FALSE
+287;NU-CPF-R;;Número do CPF do recebedor;11;;297;d;FALSE
+298;CS-SEXO-R;;Sexo do recebedor (6);1;;298;d;FALSE
+299;NM-TITULAR-BENEF-T;;Nome do titular do benefício;40;;338;c;TRUE
+339;NM-MAE-T;;Nome da mãe do titular do benefício;32;;370;c;TRUE
+371;NU-CPF-T;;CPF do titular do benefício;11;;381;d;FALSE
+382;ID-NIT-T;;Nit do titular do benefício;11;;392;d;FALSE
+393;DT-NASCIMENTO-T;;Data nascimento do titular do benefício (5);8;;400;d;FALSE
+401;CTPS-T;;Número da CTPS do titular do benefício;7;;407;d;FALSE
+408;CTPS-SERIE-T;;Número série CTPS do titular do benefício;5;;412;d;FALSE
+413;CTPS-UF-T;;UF da CTPS do titular do benefício;2;;414;c;TRUE
+415;NU-IDENTIDADE-T;;Número de identidade do titular do benefício;14;;428;c;TRUE
+429;IDENTIDADE-UF-T;;UF da identidade do titular do benefício;2;;430;c;TRUE
+431;CS-EMISSOR-T;;Órgão emissor da identidade do titular do benefício (13);2;;432;c;TRUE
+433;NU-TIT-ELEITOR;;Número do título de eleitor do titular do benefício;13;;445;d;FALSE
+446;CS-VAL-CNIS;;Classificador de validade do NIT do titular no CNIS (12);2;;447;d;FALSE
+448;CS-SEXO-T;;Sexo titular do benefício (6);1;;448;d;FALSE
+449;TE-ENDERECO-T;;Endereço do titular (logradouro e número);40;;488;c;TRUE
+489;NM-BAIRRO-T;;Nome do bairro do titular do benefício;17;;505;c;TRUE
+506;NU-CEP-T;;CEP do titular do benefício;8;;513;d;FALSE
+514;NU-DDD-T;;DDD do titular do benefício;4;;517;c;TRUE
+518;NU-TELEFONE-T;;Número de telefone do titular do benefício;8;;525;c;TRUE
+526;ID-MUN-SINPAS-T;;Município de nascimento do titular (7);5;;530;d;FALSE
+531;ID-MUN-IBGE-T;;Município de nascimento do titular (8);6;;536;d;FALSE
+537;NM-MUNICIPIO-T;;Nome município do titular do benefício;24;;560;c;TRUE
+561;NM-UF-MUNICIPIO-T;;UF do município do Titular do benefício;2;;562;c;TRUE
+563;D2-OBITO-T;;Data de óbito do titular (5);8;;570;d;FALSE
+571;NM-INSTITUIDOR-I;;Nome do Instituidor do Benefício;40;;610;c;TRUE
+611;NM-MAE-I;;Nome da mãe do instituidor do benefício;32;;642;c;TRUE
+643;NU-CPF-I;;CPF do instituidor do benefício;11;;653;d;FALSE
+654;ID-NIT-I;;NIT do instituidor do benefício;11;;664;d;FALSE
+665;DT-NASCIMENTO-I;;Data de nascimento do instituidor do benefício (5);8;;672;d;FALSE
+673;CTPS-I;;Número da CTPS do instituidor do benefício;7;;679;d;FALSE
+680;CTPS-SERIE-I;;Número de série da CTPS do instituidor do benefício;5;;684;d;FALSE
+685;CTPS-UF-I;;UF da CTPS do instituidor do benefício;2;;686;c;TRUE
+687;NU-IDENTIDADE-I;;Número de identidade do instituidor do benefício;14;;700;c;TRUE
+701;IDENTIDADE-UF-I;;UF da identidade do instituidor do benefício;2;;702;c;TRUE
+703;CS-EMISSOR-I;;Órgão emissor da identidade do instituidor do benefício (13);2;;704;c;TRUE
+705;NU-TIT-ELEITOR-I;;Número do título de eleitor do instituidor;13;;717;d;FALSE
+718;CS-VAL-CNIS-I;;Classificador de validade do Nit do instituidor no CNIS (12);2;;719;d;FALSE
+720;CS-SEXO-I;;Sexo do segurado instituidor (6);1;;720;d;FALSE
+721;D2-OBITO-I;;Data de óbito do segurado instituidor (5);8;;728;d;FALSE
+729;NM-PROCURADOR-P;;Nome do procurador;70;;798;c;TRUE
+799;NM-MAE-P;;Nome da mãe do procurador;70;;868;c;TRUE
+869;NU-CPF-P;;CPF do procurador;11;;879;d;FALSE
+880;ID-NIT-P;;Nit do procurador;11;;890;d;FALSE
+891;DT-NASCIMENTO-P;;Data de Nascimento do Procurador (5);8;;898;d;FALSE
+899;CTPS-P;;Número da CTPS do procurador;7;;905;d;FALSE
+906;CTPS-SERIE-P;;Número de série da CTPS do procurador;5;;910;d;FALSE
+911;CTPS-UF-P;;UF da CTPS do procurador;2;;912;c;TRUE
+913;NU-IDENTIDADE-P;;Número de identidade do procurador;14;;926;c;TRUE
+927;IDENTIDADE-UF-P;;UF da identidade do procurador;2;;928;d;FALSE
+929;CS-EMISSOR-P;;Órgão emissor da identidade do procurador (13);2;;930;c;TRUE
+931;CS-SEXO-P;;Sexo do procurador (6);1;;931;d;FALSE
+932;NM-BAIRRO-P;;Nome do bairro do procurador;17;;948;c;TRUE
+949;NU-CEP-P;;CEP do procurador;8;;956;d;FALSE
+957;TE-ENDERECO-P;;Endereço do procurador (logradouro e núm.);40;;996;c;TRUE
+997;NM-MUNICIPIO-P;;Nome do município do procurador;40;;1036;c;TRUE
+1037;NM-UF-MUNICIPIO-P;;UF do município do procurador;2;;1038;c;TRUE
+1039;MUNICIP-NASC-P;;Município de nascimento do procurador;6;;1044;d;FALSE
+1045;NM-REPRESENTANTE-R;;Nome do representante legal;40;;1084;c;TRUE
+1085;NM-MAE-R;;Nome da mãe do representante legal;32;;1116;c;TRUE
+1117;ID-NIT-R;;NIT do representante legal;11;;1127;d;FALSE
+1128;DT-NASCIMENTO-R;;Data nascimento do representante legal (5);8;;1135;d;FALSE
+1136;CTPS-R;;Número da CTPS do representante legal;7;;1142;d;FALSE
+1143;CTPS-SERIE-R;;Série da CTPS do representante legal;5;;1147;d;FALSE
+1148;CTPS-UF-R;;UF da CTPS do representante legal;2;;1149;c;TRUE
+1150;NU-IDENTIDADE-R;;Número de identid. do representante legal;14;;1163;c;TRUE
+1164;IDENTIDADE-UF-R;;UF da identidade do representante legal;2;;1165;c;TRUE
+1166;CS-EMISSOR-R;;Órgão emissor identidade do repres. legal (13);2;;1167;c;TRUE
+1168;CS-TIPO-R;;Classificador do tipo de representante (9);1;;1168;d;FALSE
+1169;QT-DEP-IR;;Quantidade de dependentes no I.R.;2;;1170;d;FALSE
+1171;QT-DEP-VAL-NB;;‘Quantidade de dependentes válidos no benefício;2;;1172;d;FALSE
+1173;QT-DEP-CADASTRO;;Quantidade de dependentes cadastrados no benefício;2;;1174;d;FALSE
